@@ -1,0 +1,48 @@
+@ charset "tuf-8";
+.lunbo{
+	height:500px;
+    background:#2a2c2e;
+	overflow: hidden;
+
+}
+.lunbo .slidecontent{
+	overflow:hidden;padding: 20px 0;
+	position:relative;
+}
+.lunbo .slidecontent .slider{
+	width:1280px; height:500px;
+	margin: 0 auto;
+	position:relative;
+	 overflow: hidden;
+}
+.lunbo .slidecontent .slider img{position: absolute;
+}
+.lunbo .slidecontent .sliderpin{
+    position:absolute;
+    top:110px;
+    right:44px;
+    width:240px;
+
+}
+.lunbo .slidecontent .sliderpin li{
+	font-family: "Microsoft Yahei";
+	list-style: none;
+	display: block;
+	width:240px;
+	padding: 0 10px 0 15px;
+    line-height: 40px;
+    height:40px;
+    font-size: 14px;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    background-color: #fff;
+	background-color: rgba(255,255,255,.9)
+
+}
+.lunbo .slidecontent .sliderpin  .on{
+	color:#fff;
+	background-color: #ff920b;
+}
