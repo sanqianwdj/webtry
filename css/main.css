@@ -241,6 +241,8 @@ footer{
 			transform:rotate(180deg);
 
 		}		
-
+ #canvas {
+            width:200px;height:200px;
+        }
   
 
