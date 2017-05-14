@@ -248,3 +248,11 @@ footer{
 .clock{
 width:200px;height:300px;text-align:center;left: 50px;top: 40px;position: relative;
 }
+#canvas1{
+            position: absolute;
+            display: block;
+            left:0;
+            top:0;
+            background: #0f0f0f;
+            z-index: -1;
+        }
