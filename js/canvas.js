@@ -67,8 +67,8 @@ var canvas = document.getElementById("canvas1");
     }
 
     function getSize(){
-        w = canvas.width = window.innerWidth;
-        h = canvas.height = window.innerHeight;
+        w = canvas.width = document.scrollWidth;
+        h = canvas.height =  document.scrollHeight;
     }
     function Partical(){
         this.x = Math.random()*w;           //粒子的x轴坐标
