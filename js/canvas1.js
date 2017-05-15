@@ -68,7 +68,7 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequest
 let canvas = document.getElementById('canvas1');
 let ctx = canvas.getContext('2d');
 let w = canvas.width = document.documentElement.scrollWidth||document.body.scrollWidth;
-let h = canvas.height = document.body.scrollHeight;
+let h = canvas.height = document.documentElement.scrollHeight||hdocument.body.scrollHeight;
 let circles = [];
 let current_circle = new currentCirle(0, 0)
 let draw = function () {
