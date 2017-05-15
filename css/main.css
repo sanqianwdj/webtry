@@ -253,7 +253,6 @@ width:200px;height:300px;text-align:center;left: 50px;top: 40px;position: relati
             display: block;
             left:0;
             top:0;
-	width:100%;height:100%;
-            background: #fff;
+	    background: #fff;
             z-index: -10;
         }
