@@ -253,6 +253,6 @@ width:200px;height:300px;text-align:center;left: 50px;top: 40px;position: relati
             display: block;
             left:0;
             top:0;
-            background: white;
+            background: #fff;
             z-index: -10;
         }
