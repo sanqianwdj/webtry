@@ -65,7 +65,7 @@ class currentCirle extends Circle {
 }
 //更新页面用requestAnimationFrame替代setTimeout
 window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-let canvas = document.getElementById('canvas');
+let canvas = document.getElementById('canvas1');
 let ctx = canvas.getContext('2d');
 let w = canvas.width = document.documentElement.scrollWidth||document.body.scrollWidth;
 let h = canvas.height = document.body.scrollHeight;
