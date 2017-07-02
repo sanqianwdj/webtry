@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 60vw;
+  margin: 0;
+  --mouseX: 0deg;
+  --mouseY: 0deg;
+}img {
+  transform: rotateX(calc(var(--mouseY)))
+    rotateY(calc(var(--mouseX)));
+}
+	</style>
+
+</head>
+<body><img src="C:\Users\wangwdj\Desktop/qq.jpg" srcset="dasha-2x.jpg 2x" alt>
+<script type="text/javascript">
+const img = document.getElementsByTagName("img")[0];
+	function sway(xPos, yPos) {
+  let wh = window.innerHeight / 2,
+  ww = window.innerWidth / 2;
+  document.body.style.setProperty("--mouseX", (xPos - ww) / 25+"deg");
+  document.body.style.setProperty("--mouseY", (yPos - wh) / 25+"deg");
+}document.addEventListener("mousemove", function(e) {
+  sway(e.clientX,e.clientY);
+})
+
+document.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    var touch = e.targetTouches[0];
+    if (touch) {
+        sway(touch.pageX, touch.pageY);
+    }
+});
+</script>
+</body>
+</html>
