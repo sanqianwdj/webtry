@@ -1,4 +1,4 @@
-# webtry收集练习的一些效果  
+# webtry收集的不错一些效果和插件  
 
 https://github.com/Xaxis/jquery.parallaxmouse 
 插件
