@@ -36,7 +36,7 @@ function init() {
 
 
     //鼠标按下
-    myCanvasObject.addEventListener(tapstart, function(event) {
+    myCanvasObject.addEventListener(tapstart, function(e) {
         this.style.cursor = "move";
         isDown = true;
         xPointer = hastouch ? e.targetTouches[0].pageX : e.clientX - this.offsetLeft;
@@ -47,7 +47,7 @@ function init() {
 
 
     //鼠标按下后拖动
-    myCanvasObject.addEventListener(tapmove, function(event) {
+    myCanvasObject.addEventListener(tapmove, function(e) {
         if (isDown) {
         xPointer = hastouch ? e.targetTouches[0].pageX : e.clientX - this.offsetLeft;;
         yPointer = hastouch ? e.targetTouches[0].pageY : e.clientY - this.offsetTop;;
@@ -58,7 +58,7 @@ function init() {
 
 
     //鼠标抬起取消事件
-    myCanvasObject.addEventListener(tapend, function(event) {
+    myCanvasObject.addEventListener(tapend, function(e) {
         isDown = false;
         pointerArr = [];
     });
